@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Images/rps.jpeg" />
+    <script src="game.js" defer></script>
+    <title>Rock, Paper & Scissors</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <h2 class="score">
+          Win:&nbsp; <span id="win">0</span> &nbsp;|| &nbsp; Draw:&nbsp;
+          <span id="draw">0</span> &nbsp;||&nbsp; Lose:&nbsp;
+          <span id="lose">0</span>
+        </h2>
+        <button type="reset" class="btn" onclick="resetFunction()">
+          Reset
+        </button>
+      </div>
+
+      <div class="wrap">
+        <img
+          onclick="selectRock()"
+          src="Images/rock.png"
+          id="rock"
+          alt="rock"
+          title="rock"
+        />
+        <img
+          onclick="selectPaper()"
+          src="Images/paper.png"
+          id="paper"
+          alt="paper"
+          title="paper"
+        />
+        <img
+          onclick="selectScissor()"
+          src="Images/scissor.png"
+          id="scissor"
+          alt="scissor"
+          title="scissor"
+        />
+      </div>
+      <div class="newWrap">
+        <div><img id="playerImage" src="" alt="" /></div>
+        <div class="newWrapDown">
+          <img id="computerImage" src="" alt="" />
+        </div>
+        <h2 class="announce"></h2>
+        <h2 onclick="playAgain()" class="playAgain">Play Again</h2>
+      </div>
+    </div>
+
+    <div class="fixed">
+      <a href="instruction.html"
+        ><img src="Images/settings.png" alt="settings"
+      /></a>
+    </div>
+  </body>
+</html>
